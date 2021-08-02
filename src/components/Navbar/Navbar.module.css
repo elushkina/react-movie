@@ -1,0 +1,18 @@
+.navbar {
+    width: 200px;
+    padding: 45px 30px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navbar a {
+    padding: 8px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.navbar a:hover {
+    background-color: rgba(219, 216, 216, 0.5);
+    transition: 0.3s;
+}
