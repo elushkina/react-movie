@@ -1,20 +1,20 @@
 import React from 'react'
 import styles from './LandingPage.module.css'
-import {IMAGE_URL} from "../../api/config";
+import { getPhotoPreview } from '../../api/api';
 
 
-export const LandingPage = ({popularMovies}) => {
-    return (
+export const LandingPage = ({popularMovies, loadMovies}) => {
+    return (    
             <div className={styles.container}>
                 {popularMovies.map((movie) => {
                     return (
-                        <div className={styles.container_item}>
-                            <img alt='movie_preview' src={`${IMAGE_URL}w200${movie.poster_path}`}/>
+                        <div className={styles.container_item} tabIndex='0'>
+                            <img alt='movie_preview' src={getPhotoPreview(movie.poster_path)}/>
                             <span>{movie.title}</span>
                         </div>
                     )
                 })}
-                <button>Show more</button>
+                <button onClick={loadMovies}>Show more</button>
             </div>
     )
 }

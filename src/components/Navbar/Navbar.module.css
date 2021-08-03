@@ -4,6 +4,7 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid rgba(139, 139, 139, 0.34);
 }
 .navbar a {
     padding: 8px 15px;
@@ -15,4 +16,5 @@
 .navbar a:hover {
     background-color: rgba(219, 216, 216, 0.5);
     transition: 0.3s;
+    cursor: pointer;
 }
