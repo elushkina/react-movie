@@ -18,6 +18,11 @@
     justify-content: space-around;
 }
 
+.header_content a{
+   color: #ffffff;
+   text-decoration: none;
+}
+
 .header_content input {
     width: 500px;
     height: 35px;

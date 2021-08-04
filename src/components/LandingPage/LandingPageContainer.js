@@ -10,6 +10,7 @@ export const LandingPageContainer = () => {
         loadMovies()
     }, [])
 
+
     function loadMovies() {
         fetchMovies(currentPage)
             .then((data) => {

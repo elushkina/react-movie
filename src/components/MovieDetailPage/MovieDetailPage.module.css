@@ -1,0 +1,55 @@
+.mainInfo {
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.mainInfo::before{
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 39, 41, .47);
+}
+
+.mainInfo_section {
+    color: #ffffff;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    width: 70%;
+    z-index: 3;
+}
+
+.mainInfo_section h1 {
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+}
+
+.mainInfo_section h4 {
+    font-size: 2rem;
+}
+
+.movieInfo {
+    display: flex;
+    padding: 30px 45px;
+}
+
+.movieInfo_section {
+    flex-basis: 400px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.movieInfo_overview {
+    flex-shrink: 1;
+}

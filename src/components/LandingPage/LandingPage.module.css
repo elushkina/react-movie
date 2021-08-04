@@ -1,3 +1,8 @@
+.popularFilms {
+    margin-top: 15px;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +11,14 @@
     justify-content: space-between;
 }
 
-.container button {
+.container a {
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+}
+
+.container__button {
+    display: block;
     margin: 10px auto 20px auto;
     padding: 10px 30px;
     min-width: 100px;
@@ -20,7 +32,7 @@
     font-size: 20px;
 }
 
-.container button:hover {
+.container__button:hover {
     background: #30549c;
     color: #fff;
     transition: .3s;
@@ -29,7 +41,7 @@
 .container_item {
     display: flex;
     flex-direction: column;
-    flex-basis: 235px;
+    width: 235px;
     margin-right: 6px;
     padding: 20px 10px;
     border: 1px solid #c7c7c757;
